@@ -1,3 +1,32 @@
+# Tetris (POSIX-compatible fork)
+
+> This is a POSIX-compatible fork of [svedev0/tetris-c](https://github.com/svedev0/tetris-c), enabling full Linux and macOS support(to create cross-platform functionality)  while keeping the original gameplay and structure.
+
+---
+
+## 🧩 Additional Features (Fork)
+- Fully playable on **Linux** and **macOS** terminals  
+- Uses **POSIX APIs** (`termios`, `unistd`, `poll`) instead of Windows-specific ones
+- Implemented _kbhit() and _getch() for POSIX systems
+- Randomize the start of the tetrominoes at the beginning of the game
+- Compatible with GCC and Clang  
+- Maintains clean code separation between Windows and POSIX versions  
+- Cross-platform architecture ready for future improvements
+
+---
+
+## 🖥️ Build and Run (Linux / macOS)
+
+```bash
+git clone https://github.com/<YourUsername>/tetris-c.git
+cd tetris-c
+make
+./tetris
+```
+
+## 🎮 Original README (Unmodified)
+
+(The following section is from the original author’s README for documentation and gameplay reference.)
 # tetris-c
 
 A Tetris game written in C for the Windows terminal.
